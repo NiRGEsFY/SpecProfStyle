@@ -561,4 +561,28 @@ footer{
     #scroller{
         height: 400px;
     }
+    #bottonTextAboutCompany{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .textInMenuButton{
+        font-size: 12px;
+    }
+    #inputSearch{
+        font-size: 12px;
+        width: 95%;
+    }
+    .menuSearchArea{
+        width: 130px;
+    }
+    #menuButtonImg{
+        width: 25px;
+        height: 25px;
+    }
+    #boardOfMenu{
+        height: 40px;
+    }
+    .menuButton{
+        margin: 0px 20px 0px 20px;
+    }
 }
