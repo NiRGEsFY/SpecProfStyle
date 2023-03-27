@@ -564,31 +564,9 @@ footer{
     #scroller{
         height: 400px;
     }
-    #bottonTextAboutCompany{
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    .textInMenuButton{
-        font-size: 12px;
-    }
-    #inputSearch{
-        font-size: 12px;
-        width: 95%;
-    }
-    .menuSearchArea{
-        width: 130px;
-    }
-    #menuButtonImg{
-        width: 25px;
-        height: 25px;
-    }
-    #boardOfMenu{
-        height: 40px;
-    }
-    .menuButton{
-        margin: 0px 20px 0px 20px;
-    }
 }
+<<<<<<< HEAD
+=======
 @media only screen and (max-width: 425px ){
     #scroller{
         height: 200px;
@@ -643,3 +621,4 @@ footer{
         margin: 0px 4px 0px 4px;
     }
 }
+>>>>>>> 1a39a08 (New Part About Company)
