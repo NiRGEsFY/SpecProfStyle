@@ -11,9 +11,6 @@ header{
 a{
     text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
-}
 #boardOfInforamationAndLogo{
     display: flex;
     flex-direction: row;
@@ -34,6 +31,10 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+}
+#logoDirection:hover{
+    text-decoration: underline;
 }
 #mainLogo{
     width: auto;
@@ -145,6 +146,7 @@ a:hover{
     margin: 0px 0px 0px 6.5px;
 }
 #boardOfMenu{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -167,6 +169,7 @@ a:hover{
     color: #dadada;
     border: none;
     height: 80%;
+    position: relative;
 }
 .textInMenuButton{
     font-size: 14px;
@@ -179,6 +182,52 @@ a:hover{
 .menuButton:hover .triangle{
     transition-duration: 0.5s;
     border-top: 10px solid #dadada;
+}
+#menuListInfo{
+    position: relative;
+}
+#menuButtonList{
+    z-index: 1;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    top: 19.5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menuButtonPartOfList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    transition: 0.5s;
+    opacity: 0;
+    width: 75%;
+    font-size: 0px;
+    background-color: #1f3461;
+}
+
+#menuListInfo:hover .menuButtonPartOfList,
+#menuButtonList:hover .menuButtonPartOfList{
+    font-size: 14px;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 1.5px;
+    border: 1px solid #dadada;
+    height: 40px;
+    position: relative; 
+    width: 100%;
+    color: #dadada;
+    text-decoration: none;
+}
+.menuButtonPartOfList:hover{
+    background: #124fc0;
 }
 #inputSearch{
     background-color: #dadada;
@@ -565,8 +614,6 @@ footer{
         height: 400px;
     }
 }
-<<<<<<< HEAD
-=======
 @media only screen and (max-width: 425px ){
     #scroller{
         height: 200px;
@@ -621,4 +668,3 @@ footer{
         margin: 0px 4px 0px 4px;
     }
 }
->>>>>>> 1a39a08 (New Part About Company)
