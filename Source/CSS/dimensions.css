@@ -1,0 +1,29 @@
+#middlePartOfMainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.partDimensions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#spravkaShoe{
+    text-align: center;
+}
+table{
+    margin: 0px;
+    padding: 0px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+tr{
+    padding: 0px;
+    margin: 0px;
+}
+td{
+    margin: 0px;
+    border: 1px solid #0e0e0e;
+    padding: 5px;
+}
