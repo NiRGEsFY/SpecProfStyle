@@ -455,6 +455,7 @@ footer{
     background: rgb(249,253,228);
     background: linear-gradient(0deg, rgba(249,253,228,1) 50%, rgba(248,248,248,1) 100%);
     padding-top: 5%;
+    width: 100%;
 }
 #bottonTextAboutCompany{
     display: flex;
