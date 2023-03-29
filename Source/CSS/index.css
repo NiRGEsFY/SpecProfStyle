@@ -561,7 +561,7 @@ footer{
     }
     #bottonTextAboutCompany{
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
     }
     #leftPartOfBottonTextAboutCompany{
         width: 335px;

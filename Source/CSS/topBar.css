@@ -11,9 +11,6 @@ header{
 a{
     text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
-}
 #boardOfInforamationAndLogo{
     display: flex;
     flex-direction: row;
@@ -34,6 +31,10 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+}
+#logoDirection:hover{
+    text-decoration: underline;
 }
 #mainLogo{
     width: auto;
@@ -145,6 +146,7 @@ a:hover{
     margin: 0px 0px 0px 6.5px;
 }
 #boardOfMenu{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -153,6 +155,7 @@ a:hover{
     margin: 0;
     height: 50px;
     background-color: #1f3461;
+    z-index: 2;
 }
 .menuButton{
     display: flex;
@@ -167,6 +170,8 @@ a:hover{
     color: #dadada;
     border: none;
     height: 80%;
+    position: relative;
+    z-index: 2;
 }
 .textInMenuButton{
     font-size: 14px;
@@ -179,6 +184,56 @@ a:hover{
 .menuButton:hover .triangle{
     transition-duration: 0.5s;
     border-top: 10px solid #dadada;
+}
+#menuListInfo{
+    position: relative;
+    z-index: 2;
+}
+#menuButtonList{
+    z-index: 1;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    top: 19.5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menuButtonPartOfList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    transition: 0.5s;
+    opacity: 0;
+    width: 75%;
+    font-size: 0px;
+    background-color: #1f3461;
+    z-index: -1;
+}
+
+#menuListInfo:hover .menuButtonPartOfList,
+#menuButtonList:hover .menuButtonPartOfList{
+    font-size: 14px;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 1.5px;
+    border: 1px solid #dadada;
+    height: 40px;
+    position: relative; 
+    width: 100%;
+    color: #dadada;
+    text-decoration: none;
+    z-index: 2;
+}
+.menuButtonPartOfList:hover{
+    background: #124fc0;
+    z-index: 3;
 }
 #inputSearch{
     background-color: #dadada;
@@ -195,6 +250,12 @@ a:hover{
 #menuButtonImg{
     width: 30px;
     height: 30px;
+}
+.triangle {
+    margin: 0px 5px 0px 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #dadada;
 }
 #directionOfMainContent{
     display: flex;
@@ -217,6 +278,7 @@ a:hover{
     justify-self: end;
     z-index: 0;
 }
+
 footer{
     padding: 0;
     background: rgb(249,253,228);
@@ -260,9 +322,72 @@ footer{
 }
 
 @media only screen and (max-width: 1230px ){
-
+    .blockTopItem{
+        width: 200px;
+        height: 200px;
+        margin: 5px 15px 5px 15px;
+    }
+    #listTopItems{
+        margin: 50px 0px 50px 0px;
+    }
+    #mainBlockMerit{
+        margin-top: 10px;
+        height: 300px;
+    }
+    .containerMiniImgInBlockMerit{
+        width: 150px;
+        height: 150px;
+    }
+    .textInBlockMerit{
+        font-size: 16px;
+    }
+    .partBlockMerit{
+        height: 240px;
+        width: 150px;
+        margin: 0px 12px 0px 12px;
+    }
+    .imgInBlockMerit{
+        width: 110px;
+        height: auto;
+        margin: 5px 5px 15px 5px;
+    }
+    #scroller{
+        height: 400px;
+    }
 }
 @media only screen and (max-width: 970px ){
+    .blockTopItem{
+        width: 160px;
+        height: 160px;
+        margin: 5px 15px 5px 15px;
+    }
+    #listTopItems{
+        margin: 20px 0px 30px 0px;
+    }
+    #mainBlockMerit{
+        margin-top: 10px;
+        height: 250px;
+    }
+    .containerMiniImgInBlockMerit{
+        width: 110px;
+        height: 110px;
+    }
+    .textInBlockMerit{
+        font-size: 14px;
+    }
+    .partBlockMerit{
+        height: 200px;
+        width: 130px;
+        margin: 0px 12px 0px 12px;
+    }
+    .imgInBlockMerit{
+        width: 90px;
+        height: auto;
+        margin: 5px 5px 15px 5px;
+    }
+    #scroller{
+        height: 400px;
+    }
     #bottonTextAboutCompany{
         flex-wrap: wrap;
         justify-content: start;
@@ -285,39 +410,61 @@ footer{
     }
 }
 @media only screen and (max-width: 780px ){
-    #bottonTextAboutCompany{
-        flex-wrap: wrap;
-        justify-content: start;
+    .blockTopItem{
+        width: 110px;
+        height: 110px;
+        margin: 5px 8px 5px 8px;
     }
-    .textInMenuButton{
-        font-size: 12px;
+    #listTopItems{
+        margin: 20px 0px 30px 0px;
     }
-    #inputSearch{
-        font-size: 12px;
-        width: 95%;
+    #mainBlockMerit{
+        margin-top: 10px;
+        height: 250px;
     }
-    .menuSearchArea{
-        width: 130px;
+    .containerMiniImgInBlockMerit{
+        width: 110px;
+        height: 110px;
     }
-    #menuButtonImg{
-        width: 25px;
-        height: 25px;
+    .textInBlockMerit{
+        font-size: 14px;
     }
-    #boardOfMenu{
-        height: 40px;
+    .partBlockMerit{
+        height: 200px;
+        width: 90px;
+        margin: 0px 12px 0px 12px;
     }
-    .menuButton{
-        margin: 0px 20px 0px 20px;
+    .imgInBlockMerit{
+        width: 90px;
+        height: auto;
+        margin: 5px 5px 15px 5px;
+    }
+    #scroller{
+        height: 400px;
     }
 }
 @media only screen and (max-width: 425px ){
+    #scroller{
+        height: 200px;
+    }
     #boardOfInforamation{
         display: none;
+    }
+    #mainBlockMerit{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 350px;
     }
     #inputSearch{
         display: none;
         width: 0px;
         height: 0px;
+    }
+    #listTopItems{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 22px;
     }
     #bottonTextAboutCompany{
         display: none;

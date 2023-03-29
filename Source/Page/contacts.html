@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="СпецПрофСтиль"/>
+    <meta name="description" content="спецпрофстиль"/>
     <meta name="keywords" content="купить, спецовка, перчатки, обувь, цена, очки, защитные, спец-одежда, спец одежда, спец одежду, спецовку, штаны, защитный" />
-    <meta name="title" content="Купить Спец Одежду"/>
+    <meta name="title" content="купить Спец Одежду"/>
     <title>СпецПрофСтиль</title>
-    <link type="text/css" rel="stylesheet" href="../CSS/AboutCompany.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/topBar.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/contacts.css">
 </head>
 <body class="body">
     <header>
@@ -71,22 +72,39 @@
         </div>
         <div id="boardOfMenu">
             <button class="menuButton" 
-                    onclick="window.location.href = 'Source/Page/catalog.html';">
+                    onclick="window.location.href = '../Page/catalog.html';">
                 <p class="textInMenuButton">
                     КАТАЛОГ
                 </p>
             </button>
             <button class="menuButton" 
-                    onclick="window.location.href = 'Source/Page/catalog.html';">
+                    id="menuListInfo">
+                <div id="menuButtonList">
+                    <a href="../Page/contacts.html">
+                        <ul class="menuButtonPartOfList">
+                            КОНТАКТЫ
+                        </ul>
+                    </a>
+                    <a href="../Page/dimensions.html">
+                        <ul class="menuButtonPartOfList">
+                            ТАБЛИЦА РАЗМЕРОВ
+                        </ul>
+                    </a>
+                    <a href="../Page/particle.html">
+                        <ul class="menuButtonPartOfList">
+                            СТАТЬИ
+                        </ul>
+                    </a>
+                    <a href="../Page/printLogo.html">
+                        <ul class="menuButtonPartOfList">
+                            НАНЕСЕНИЕ ЛОГОТИПОВ
+                        </ul>
+                    </a>
+                </div>
                 <p class="textInMenuButton">
                     ИНФОРМАЦИЯ
                 </p>
-            </button>
-            <button class="menuButton" 
-                    onclick="window.location.href = '../Page/AboutCompany.html';">
-                <p class="textInMenuButton">
-                    О КОМПАНИИ
-                </p>
+                <div class="triangle"></div> 
             </button>
             <div class="menuSearchArea">
                 <input type="text"
@@ -101,13 +119,11 @@
             </div>
         </div>
     </header>
-    
-    <script src="Source/JavaScript/index.js"></script>
     <div id="directionOfMainContent">
         <div id="leftPartOfMainContent">
+
         </div>
         <div id="middlePartOfMainContent">
-            
             <footer>
                 <div id="bottonTextAboutCompany">
                     <div id="leftPartOfBottonTextAboutCompany" 
@@ -149,6 +165,7 @@
             </footer>
         </div>
         <div id="rightPartOfMainContent">
+           
         </div>
     </div>
 </body>
