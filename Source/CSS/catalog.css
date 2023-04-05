@@ -21,6 +21,9 @@
 #catalogContext{
     width: 700px;
 }
+#categoryList{
+    width: 80%;
+}
 .category{
     width: 96%;
     height: 50px;
@@ -28,6 +31,12 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #dadadacb;
+    background-color: none;
+    margin: 2px 0px 2px 0px;
+}
+.category:hover{
+    background-color: #dadadacb;
+    transition: 0.4s;
 }
 .catalogItemImg{
     border: 1px solid #dadada7c;
