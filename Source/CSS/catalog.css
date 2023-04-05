@@ -1,0 +1,82 @@
+#catalogBlock{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+#catalogMenu{
+    background-color: red;
+    width: 250px;
+}
+#catalogContext{
+    width: 700px;
+}
+.catalogItemImg{
+    border: 1px solid #dadada7c;
+    height: 150px;
+    width: auto;
+}
+.catalogItem{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    border: 1px solid #dadadacb;
+}
+.catalogItem{
+    margin: 5px 0px 5px 0px;
+}
+.catalogItemDescrition{
+    margin: 5px 10px 5px 15px;
+}
+.catalogItemCost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+.catalogItemVendorCode{
+    color: #707070a2;
+}
+.catalogItemDescrition h4,
+.catalogItemDescrition p{
+    margin: 2px 5px 2px 0px;
+}
+.catalogItemFieldCategory{
+    display: flex;
+    flex-direction: row;
+}
+.catalogItemFieldCategoryBlock{
+    border-radius: 4px;
+    padding: 3px;
+    margin: 0px 10px 8px 0px;
+    opacity: 0.9;
+}
+#superCost{
+    background-color: #ff00006c;
+    color: #240000;
+}
+#wholeSaleCheaper{
+    background-color: #48ff0048;
+    color: #0c2b00; 
+}
+.price{
+    margin: 4px 0px 4px 0px;
+    border-radius: 4px;
+    background-color: none;
+    padding: 4px;
+}
+.discountPrice{
+    margin: 4px 0px 4px 0px;
+    border-radius: 4px;
+    background-color: #00ff377c;
+    padding: 4px;
+}
+.oldPrice{
+    margin: 4px 0px 4px 0px;
+    border-radius: 4px;
+    background-color: none;
+    padding: 4px;
+    text-decoration: line-through;
+    background-color: #7000008f;
+}
