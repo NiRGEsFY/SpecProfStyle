@@ -1,3 +1,14 @@
+li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+input.openList{
+    display: none;
+}
+
 #catalogBlock{
     display: flex;
     justify-content: start;
@@ -7,6 +18,7 @@
 #catalogMenu{
     height: max-content;
     width: 250px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,22 +33,70 @@
 #catalogContext{
     width: 700px;
 }
-#categoryList{
-    width: 80%;
+ul.catalogUl ul{
+    display: none;
 }
-.category{
-    width: 96%;
-    height: 50px;
+ul.catalogUl li{
+    position: relative;
+}
+label.openList{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+input.openList:checked ~ ul{
+    display: block;
+}
+#catalogList{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.mainNameCatalog{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #dadadacb;
-    background-color: none;
+    height: 30px;
+    width: 100%;
     margin: 2px 0px 2px 0px;
+    background-color: #1f3461;
+    color: #dbdbdb;
 }
-.category:hover{
-    background-color: #dadadacb;
+label.openList:hover ~ div{
     transition: 0.4s;
+    background-color: #124fc0;
+}
+input.openList:checked ~ div{
+    transition: 0.4s;
+    background-color: #124fc0;
+}
+.mainCatalogItem li{
+    min-height: 25px;
+}
+.buttonFind{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #19ca02;
+    transition: 0.4s;
+}
+.buttonFind:hover{
+    cursor: pointer;
+    background-color: #13a700;
+}
+.buttonFind:active{
+    background-color: #108301;
+}
+.listSettingCategory li{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.listSettingCategory p{
+    margin: 4px 0px 4px 10px;
 }
 .catalogItemImg{
     border: 1px solid #dadada7c;
@@ -106,4 +166,12 @@
     padding: 4px;
     text-decoration: line-through;
     background-color: #7000008f;
+}
+.setting{
+    background-color: #fff;
+    display: flex;
+    margin-left: 10px;
+}
+.listSettingCategory li h4{
+    margin: 5px 0px 5px 0px;
 }
