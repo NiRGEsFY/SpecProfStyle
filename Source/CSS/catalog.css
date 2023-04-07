@@ -168,10 +168,13 @@ input.openList:checked ~ div{
     background-color: #7000008f;
 }
 .setting{
-    background-color: #fff;
+    background-color: none;
     display: flex;
     margin-left: 10px;
 }
+.setting p{
+    margin: 4px 0px 4px 3px;
+}
 .listSettingCategory li h4{
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 15px;
 }
