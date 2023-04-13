@@ -191,22 +191,31 @@ input.openList:checked ~ div{
 }
 @media only screen and (max-width: 450px ){
     .buttonFilter{
+        border: 1px solid #00000050;
         display: flex;
         position: fixed;
-        right: -15px;
+        justify-content: center;
+        align-items: center;
+        right: -5px;
         rotate: 270deg;
         z-index: 2;
         background-color: #124fc0;
-        padding: 5px;
         border-radius: 5px;
         top: 50%;
+        width: 60px;
+        height: 30px;
+        transition: 5.5s;
     }
-    .buttonFilter p{
-        margin: 0px;
-        color: #eee;
+    .buttonFilter:active{
+        background-color: #243c70;
     }
-    .buttonFilter input{
-        display: none;
+    #backgroundButtonFilter{
+        padding: 5px;
+    }
+    #catalogMenu{
+        background-color: #f8f8f8;
+        position: absolute;
+        left: -300px;
     }
     #catalogContext{
         width: 400px;
@@ -241,10 +250,7 @@ input.openList:checked ~ div{
         position: relative;
         width: 400px;
     }
-    #catalogMenu{
-        position: absolute;
-        left: -400px;
-    }
+   
 }
 @media only screen and (max-width: 375px ){
     #catalogBlock{
