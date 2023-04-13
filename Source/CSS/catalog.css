@@ -204,7 +204,7 @@ input.openList:checked ~ div{
         top: 50%;
         width: 60px;
         height: 30px;
-        transition: 5.5s;
+        transition: 0.5s;
     }
     .buttonFilter:active{
         background-color: #243c70;
