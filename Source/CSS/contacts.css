@@ -1,4 +1,4 @@
-#boardOfInforamation{
+.boardMainInfo{
     margin-bottom: 10px;
 }
 #middlePartOfMainContent{
@@ -73,7 +73,7 @@
     .partOfTextAboutCompany{
         font-size: 14px;
     }
-    #boardOfInforamation{
+    .boardMainInfo{
         flex-wrap: wrap;
     }
 }
@@ -89,7 +89,7 @@
     .partOfTextAboutCompany{
         margin: 10px 5px;
     }
-    #boardOfInforamation{
+    .boardMainInfo{
         width: 650px;
     }
     .contactsBlock{
@@ -97,17 +97,17 @@
     }
 }
 @media only screen and (max-width: 425px ){
-    #boardOfInforamation{
+    .boardMainInfo{
         display: flex;
         width: 400px;
     }
 }
 @media only screen and (max-width: 375px ){
-    #boardOfInforamation{
+    .boardMainInfo{
         display: flex;
         width: 340px;
     }
-    #boardOfInforamation img{
+    .boardMainInfo img{
         scale: 0.7;
     }
     #workTime{
@@ -128,7 +128,7 @@
     }
 }
 @media only screen and (max-width: 320px ){
-    #boardOfInforamation{
+    .boardMainInfo{
         display: flex;
         width: 280px;
     }
